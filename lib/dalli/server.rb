@@ -22,7 +22,7 @@ module Dalli
       # amount of time to sleep between retries when a failure occurs
       :socket_failure_delay => 0.01,
       # max size of value in bytes (default is 1 MB, can be overriden with "memcached -I <size>")
-      :value_max_bytes => 1024 * 1024,
+      :value_max_bytes => 5 * 1024 * 1024,
       :compressor => Compressor,
       # min byte size to attempt compression
       :compression_min_size => 1024,
